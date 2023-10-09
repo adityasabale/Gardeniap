@@ -1,0 +1,65 @@
+.navbar {
+    background-color: #388e3c; /* Dark green background */
+    color: #fff; /* White text color */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .navbar-logo img {
+    height: 40px; /* Adjust the logo height as needed */
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-links a {
+    color: #fff; /* White text color for links */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar-links a:hover {
+    color: #81c784; /* Light green text color on hover */
+  }
+  
+  .navbar-toggle {
+    display: none; /* Hide the toggle icon on larger screens */
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .navbar {
+      padding: 10px; /* Reduce padding on smaller screens */
+    }
+  
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Adjust the top position to match your design */
+      right: 10px; /* Adjust the right position to match your design */
+      background-color: #388e3c; /* Dark green background for mobile menu */
+      border-radius: 5px;
+      box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+  
+    .navbar-links.active {
+      display: flex;
+    }
+  
+    .navbar-toggle {
+      display: block; /* Show the toggle icon on smaller screens */
+      cursor: pointer;
+    }
+  
+    .fas.fa-bars.active {
+      color: #81c784; /* Light green color when menu is open */
+    }
+  }

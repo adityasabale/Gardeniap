@@ -1,0 +1,64 @@
+.navbar {
+    background-color: #070707; /* Dark green background */
+    color: #fff; /* White text color */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between; /* Space evenly between logo and links */
+    align-items: center; /* Center vertically */
+    position: fixed; /* Fixed position for a sticky navbar */
+    width: 100%;
+    z-index: 1000; /* Set a high z-index to keep it on top */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .navbar a {
+    color: #fff; /* White text color for links */
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px; /* Increase font size for better visibility */
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #81c784; /* Light green text color on hover */
+  }
+  
+  .navbar-logo {
+    height: 30px; /* Adjust the size as needed */
+    margin-right: 10px;
+  }
+  
+  .navbar-button {
+    background-color: #81c784; /* Light green button background */
+    color: #fff; /* White text color for the button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Increase font size for better visibility */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .navbar-button:hover {
+    background-color: #4caf50; /* Darker green on hover */
+  }
+  
+  /* Additional styles for the mobile responsive navbar */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      padding: 10px;
+    }
+  
+    .navbar a {
+      margin: 10px 0; /* Add spacing between links */
+    }
+  
+    .navbar-logo {
+      margin: 10px 0;
+    }
+  
+    .navbar-button {
+      margin-top: 10px; /* Add spacing for the button */
+    }
+  }
